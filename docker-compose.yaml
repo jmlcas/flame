@@ -1,9 +1,7 @@
-version: '3.6'
-
 services:
 
   flame:
-    image: pawelmalak/flame
+    image: pawelmalak/flame:latest
     container_name: flame
     volumes:
       - ./appdata:/app/data
@@ -12,7 +10,6 @@ services:
       - "8200:5005"
     environment:
       - PASSWORD=p4ssw0rd 
-    restart: unless-stopped
+    restart: unless-stopped 
 
-    
 
